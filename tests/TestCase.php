@@ -2,9 +2,9 @@
 
 namespace Hjbdev\Nimbus\Tests;
 
+use Hjbdev\Nimbus\NimbusServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Hjbdev\Nimbus\NimbusServiceProvider;
 
 class TestCase extends Orchestra
 {

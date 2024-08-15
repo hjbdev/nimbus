@@ -2,9 +2,9 @@
 
 namespace Hjbdev\Nimbus;
 
+use Hjbdev\Nimbus\Commands\NimbusCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Hjbdev\Nimbus\Commands\NimbusCommand;
 
 class NimbusServiceProvider extends PackageServiceProvider
 {
