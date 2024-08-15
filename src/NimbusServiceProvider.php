@@ -10,6 +10,7 @@ use Illuminate\Foundation\Exceptions\Handler;
 use Illuminate\Support\Facades\DB;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+
 // use Hjbdev\Nimbus\Commands\NimbusCommand;
 
 class NimbusServiceProvider extends PackageServiceProvider
@@ -41,7 +42,7 @@ class NimbusServiceProvider extends PackageServiceProvider
         }
 
         $this->callAfterResolving(Gate::class, function (Gate $gate, Application $app) {
-            $gate->define('viewNimbus', fn($user = null) => $app->environment('local'));
+            $gate->define('viewNimbus', fn ($user = null) => $app->environment('local'));
         });
 
         $this->callAfterResolving(Handler::class, function (Handler $handler) {
@@ -84,6 +85,7 @@ class NimbusServiceProvider extends PackageServiceProvider
                 } catch (\Throwable $e) {
                     // Do nothing
                 }
+
                 return true;
             });
         });
