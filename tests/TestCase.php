@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'hjbdev\\Nimbus\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Hjbdev\\Nimbus\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
