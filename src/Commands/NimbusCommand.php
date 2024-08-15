@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Hjbdev\Nimbus\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class NimbusCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'nimbus';
 
     public $description = 'My command';
 
