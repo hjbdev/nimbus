@@ -1,0 +1,11 @@
+{
+  "resources/assets/nimbus.js": {
+    "file": "assets/nimbus-DTSiO2cF.js",
+    "name": "nimbus",
+    "src": "resources/assets/nimbus.js",
+    "isEntry": true,
+    "css": [
+      "assets/nimbus-D4Win0A2.css"
+    ]
+  }
+}

@@ -17,8 +17,8 @@
     ],
     "require": {
         "php": "^8.2",
-        "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0"
+        "illuminate/contracts": "^10.0||^11.0",
+        "spatie/laravel-package-tools": "^1.16"
     },
     "require-dev": {
         "laravel/pint": "^1.14",
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "hjbdev\\Nimbus\\": "src/",
-            "hjbdev\\Nimbus\\Database\\Factories\\": "database/factories/"
+            "Hjbdev\\Nimbus\\": "src/",
+            "Hjbdev\\Nimbus\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "hjbdev\\Nimbus\\Tests\\": "tests/",
+            "Hjbdev\\Nimbus\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "hjbdev\\Nimbus\\NimbusServiceProvider"
+                "Hjbdev\\Nimbus\\NimbusServiceProvider"
             ],
             "aliases": {
-                "Nimbus": "hjbdev\\Nimbus\\Facades\\Nimbus"
+                "Nimbus": "Hjbdev\\Nimbus\\Facades\\Nimbus"
             }
         }
     },
